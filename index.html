@@ -1,105 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <title>Natalie Carl</title>
+        <link rel="stylesheet" href="style.css" />
+        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
+    <body>
+        <div class="menu-bar">
+            <div class="menu-content">
+                <div class="menu-space"></div>
+                <img class="logo" src="assets/icons/logo.png" />
+                <div class="menu-item clickable">
+                    <a
+                        href="https://scholar.google.com/citations?user=2dtaS5QAAAAJ&hl=de"
+                        >Google Scholar</a
+                    >
+                </div>
+                <div class="menu-item clickable">
+                    <a href="https://github.com/nataliecarl">GitHub</a>
+                </div>
 
-    <body class="
-        max-w-[640px] 
-        mx-auto 
-        bg-white 
-        text-black 
-        font-serif 
-        text-base 
-        p-4 
-        [&_a]:text-pink-400
-    ">
+                <div class="menu-item right">Natalie</div>
+                <div class="menu-item" id="clock">09:41</div>
+                <div class="menu-space"></div>
+            </div>
+        </div>
 
-        <br/>
+        <div class="spacer"></div>
 
-        Hi, I'm a second-year PhD student at the Scalable Software Systems 
-        Research Group at TU Berlin.
-        I'm interested in serverless computing and sustainability.
-        Check out my publications or reach out at 
-        <a href="mailto:carl@tu-berlin.de">carl@tu-berlin.de</a> :) 
+        <div class="wallpaper">
+            <div class="desktop">
+                <div id="container-papers" class="container">
+                    <img
+                        draggable="false"
+                        id="papers"
+                        src="assets/icons/folder.png"
+                    />
+                    <p>research papers</p>
+                </div>
+                <div id="container-bib" class="container">
+                    <img draggable="false" src="assets/icons/document.png" />
+                    <div class="text-box">
+                        <p>bibfile</p>
+                    </div>
+                </div>
+                <div id="container-bin" class="container">
+                    <img draggable="false" src="assets/icons/bin.png" />
+                    <p>about me</p>
+                </div>
+            </div>
+        </div>
 
-        <br/><br/><br/>
+        <div class="backdrop">
+            <div class="modal">
+                <div class="title-bar">
+                    <div class="title">research papers</div>
+                    <div class="close-box">✕</div>
+                </div>
+                <div class="content">
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            New Kids: An Architecture and Performance
+                            Investigation of Second-Generation Serverless
+                            Platforms (arXiv)
+                        </p>
+                    </div>
 
-        Trever Schirmer, Aris Wiegand, Lucca di Benedetto, Linus Gustafsson, 
-        <b></b>Natalie Carl</b>, Tobias Pfandzelter, David Bermbach. 2026. New
-        Kids: An Architecture and Performance Investigation of 
-        Second-Generation Serverless Platforms. <i>arXiv: 
-        <a href="https://arxiv.org/abs/2604.15916">2604.15916</a></a></i> 
-        [cs.DC]
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            GeoBenchr: An Application-Centric Benchmarking Suite
+                            for Spatiotemporal Database Platforms (arXiv)
+                        </p>
+                    </div>
 
-        <br/><br/>
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            Provuse: Platform-Side Function Fusion for
+                            Performance and Efficiency in FaaS Environments
+                            (SESAME '26)
+                        </p>
+                    </div>
 
-        Tim Rese, Diana Baumann, Nils Japke, <b>Natalie Carl</b>, David 
-        Bermbach. 2026. <i>GeoBenchr: An Application-Centric Benchmarking Suite 
-        for Spatiotemporal Database Platforms.</i> arXiv:<a 
-        href="https://arxiv.org/abs/2603.09398">2603.09398</a> [cs.DC]
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            Serverless Abstractions for Short-Running,
+                            Lightweight Streams (SESAME '26)
+                        </p>
+                    </div>
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            Towards Energy-Efficient Serverless Computing with
+                            Hardware Isolation (arXiv)
+                        </p>
+                    </div>
 
-        <br/><br/>
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            Minos: Exploiting Cloud Performance Variation with
+                            Function-as-a-Service Instance Selection (IC2E '25)
+                        </p>
+                    </div>
 
-        Niklas Kowallik, <b>Natalie Carl</b>, Leon Pöllinger, Wei Wang, Sharan 
-        Santhanam, David Bermbach. 2026. <i>Provuse: Platform-Side Function 
-        Fusion for Performance and Efficiency in FaaS Environments.</i>
-        arXiv:<a href="https://arxiv.org/abs/2603.06170">2603.06170</a> [cs.DC] 
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            Multi-Event Triggers for Serverless Computing (IC2E
+                            '25)
+                        </p>
+                    </div>
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            GEOFF: Federated Serverless Workflows with Data
+                            Pre-Fetching (IC2E '24)
+                        </p>
+                    </div>
+                    <div class="paper">
+                        <img
+                            draggable="false"
+                            src="assets/icons/document.png"
+                        />
+                        <p>
+                            ProFaaStinate: Delaying Serverless Function Calls to
+                            Optimize Platform Performance (WoSC '23)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <br/><br/>
-
-        <b>Natalie Carl</b>, Niklas Kowallik, Constantin Stahl, Trever 
-        Schirmer, Tobias Pfandzelter, David Bermbach. 2026. <i>Serverless 
-        Abstractions for Short-Running, Lightweight Streams.</i> 
-        arXiv:<a href="https://arxiv.org/abs/2603.03089">2603.03089</a> [cs.DC] 
-
-        <br/><br/>
-
-        <b>Natalie Carl</b>, Tobias Pfandzelter, David Bermbach. 2025. 
-        <i>Towards Energy-Efficient Serverless Computing with Hardware 
-        Isolation.</i> 
-        arXiv:<a href="https://arxiv.org/abs/2510.08180">2510.08180</a> [cs.DC] 
-
-        <br/><br/>
-
-        Trever Schirmer, <b>Natalie Carl</b>, Nils Höller, Tobias Pfandzelter, 
-        David Bermbach. 2025. <i>Minos: Exploiting Cloud Performance Variation 
-        with Function-as-a-Service Instance Selection.</i> In 2025 IEEE 
-        International Conference on Cloud Engineering (IC2E ’25). IEEE, Rennes, 
-        France, 194–199. 
-        <a href="https://doi.org/10.1109/IC2E65552.2025.00036">
-        https://doi.org/10.1109/IC2E65552.2025.00036</a>
-
-        <br/><br/>
-
-        <b>Natalie Carl</b>, Trever Schirmer, Niklas Kowallik, Joshua Adamek, 
-        Tobias Pfandzelter, Sergio Lucia, David Bermbach. 2025. <i>Multi-Event 
-        Triggers for Serverless Computing.</i> In 2025 IEEE International 
-        Conference on Cloud Engineering (IC2E ’25). IEEE, Rennes, France, 
-        146–154. <a href="https://doi.org/10.1109/IC2E65552.2025.00030">
-        https://doi.org/10.1109/IC2E65552.2025.00030</a>
-
-        <br/><br/>
-
-        <b>Natalie Carl</b>, Trever Schirmer, Tobias Pfandzelter, David 
-        Bermbach. 2024. <i>GeoFF: Federated Serverless Workflows with Data 
-        Pre-Fetching.</i> In 2024 IEEE International Conference on Cloud 
-        Engineering (IC2E ’24). IEEE, Paphos, Cyprus, 144–151. 
-        <a href="https://doi.org/10.1109/IC2E61754.2024.00023">
-        https://doi.org/10.1109/IC2E61754.2024.00023</a>
-
-        <br/><br/>
-
-        Trever Schirmer, <b>Natalie Carl</b>, Tobias Pfandzelter, David 
-        Bermbach. 2023. <i>ProFaaStinate: Delaying Serverless Function Calls to 
-        Optimize Platform Performance.</i> In Proceedings of the 9th 
-        International Workshop on Serverless Computing (WoSC ’23). ACM, 
-        Bologna, Italy, 1–6. <a href="https://doi.org/10.1145/3631295.3631393">
-        https://doi.org/10.1145/3631295.3631393</a>
-
+        <script src="index.js"></script>
     </body>
 </html>
